@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           children: [
             const Task('Aprender flutter todos os dias da semana !@@@@!'),
             Task(' Andar de bike'),
-            Task('Andar de skate'),
+            Task('Andar de skae'),
             Task('Jogar videogame'),
             Task('Jogar dado'),
             Task('Jogar ping pong'),
