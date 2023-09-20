@@ -46,14 +46,32 @@ class _TaskState extends State<Task> {
                           ),
                         ),
                       ),
-                      ElevatedButton(
-                        onPressed: () {
-                          setState(() {
-                            nivel++;
-                          });
-                        },
-                        child: const Icon(
-                          Icons.arrow_drop_up,
+                      Container(
+                        // colocou o elevatedbutton no container para delimitar o tamaho heigth e width
+                        height: 52,
+                        width: 52,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            setState(() {
+                              nivel++;
+                            });
+                          },
+                          child: const Column(
+                            // usou coluna pq é o icone em cima e o texto embaixo
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Icon(
+                                Icons.arrow_drop_up,
+                              ),
+                              Text(
+                                'UP',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],

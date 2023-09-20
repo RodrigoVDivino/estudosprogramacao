@@ -9,13 +9,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(
+          leading: Container(),
+          title: Text(
             'Tarefas',
           ),
         ),
         body: ListView(
-          children: [
-            const Task('Aprender flutter todos os dias da semana !@@@@!'),
+          children: const [
+            Task('Aprender flutter todos os dias da semana !@@@@!'),
             Task(' Andar de bike'),
             Task('Andar de skae'),
             Task('Jogar videogame'),
